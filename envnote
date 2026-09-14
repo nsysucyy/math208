@@ -27,3 +27,13 @@ pkill -f jupyter
 cp /home/math/math208/git/nsysu-math208/static_files/presentations/Ch1.ipynb /home/math/math208/ch1
 
 ctrl+shift+p >remote
+
+git config --global user.email "nsysucyy@gmail.com"
+
+math@NUCYY:~/math208$   git config --global user.name "CYY"
+
+git init
+git add .
+git commit -m "first commit"
+git rm --cached envnote
+git ls-files
