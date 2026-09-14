@@ -1,0 +1,39 @@
+
+# 1. 先裝 JupyterLab 與講義用的測驗套件（C++ kernel 本身沒有宣告相依，這步不能省；
+#    電腦教室的 Anaconda 已內建 JupyterLab，只要裝後兩個 —— 見下方卡片）
+pip install jupyterlab jupyterquiz jupytercards
+ 
+# 2. 直接下載並安裝課程版 C++ kernel（不需 Git；--user：不需要管理員）
+pip install https://github.com/phonchi/jupyter-cpp-kernel/archive/refs/heads/nsysu-math208.zip
+ 
+# 3. 註冊 kernel；Windows 沒有 g++ 的話這一步會自動下載（約 100 MB，多連線分段，有進度條）
+python -m jcppkernel.setup_cli
+ 
+# 4. 確認 cpp17 有出現在清單裡
+jupyter kernelspec list
+
+ln -s .venv/lib/python3.13/site-packages/jcppkernel/resources/pythonds3 ./pythonds3
+
+ln -s /home/math/math208/git/nsysu-math208/static_files/presentations ./useful
+
+python3 -m venv .venv
+
+source /home/math/math208/.venv/bin/activate
+
+jupyter notebook --ip=0.0.0.0 --port=8888 --NotebookApp.token=math208
+
+pkill -f jupyter
+
+cp /home/math/math208/git/nsysu-math208/static_files/presentations/Ch1.ipynb /home/math/math208/ch1
+
+ctrl+shift+p >remote
+
+git config --global user.email "nsysucyy@gmail.com"
+
+math@NUCYY:~/math208$   git config --global user.name "CYY"
+
+git init
+git add .
+git commit -m "first commit"
+git rm --cached envnote
+git ls-files
