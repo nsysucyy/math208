@@ -7,4 +7,3 @@ The default working directory is /home/math/math208/
 
 >Chapter 0 Setting up the environment
 Refer to https://phonchi.github.io/ds-cpp-selfstudy/00b_setup.html
-The 
