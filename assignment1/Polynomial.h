@@ -1,7 +1,7 @@
 /********************************************************************************
- * Author: [Your Name]
- * Date: [Date of Creation or Last Update]
- * Purpose: 
+ * Author: 陳宥宇
+ * Date: Oct.3.2026
+ * Purpose: Assignment 1 for MATH208, implementing a Polynomial class with basic operations.
  ********************************************************************************/
 
 // Polynomial.h

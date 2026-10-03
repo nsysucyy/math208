@@ -1,13 +1,13 @@
 /********************************************************************************
- * Author: [Your Name]
- * Date: [Date of Creation or Last Update]
- * Purpose: 
+ * Author: 陳宥宇
+ * Date: Oct.3.2026
+ * Purpose: Assignment 1 for MATH208, implementing a Polynomial class with basic operations.
  ********************************************************************************/
 
 #include "Polynomial.h"
 #include <iostream>
 
-int main() {
+int test() {
     // Create polynomial p1: x - 1
     Polynomial p1({1, -1});
     std::cout << "p1: " << p1 << std::endl;
@@ -70,3 +70,20 @@ int main() {
 
     return 0;
 }
+/*
+p1: x - 1 
+p2: - 2x^3 + x^2 - x 
+p3: x^4 - 6x - 1 
+p4: 0.5 
+p5  (-p2): 2x^3 - x^2 + x 
+p6  (p1 + p2): - 2x^3 + x^2 - 1 
+p7  (p1 - p2): 2x^3 - x^2 + 2x - 1 
+p8  (p1 * p2): - 2x^4 + 3x^3 - 2x^2 + x 
+p9  (p1 * p3): x^5 - x^4 - 6x^2 + 5x + 1 
+p10 (p6 - p3): - x^4 - 2x^3 + x^2 + 6x 
+p11 (p8 + p1): - 2x^4 + 3x^3 - 2x^2 + 2x - 1 
+p12 (p9 * p4): 0.5x^5 - 0.5x^4 - 3x^2 + 2.5x + 0.5 
+p13 (p11 * p1): - 2x^5 + 5x^4 - 5x^3 + 4x^2 - 3x + 1 
+p14 (p12 + p4): 0.5x^5 - 0.5x^4 - 3x^2 + 2.5x + 1 
+p15 (-p4 + p5): 2x^3 - x^2 + x - 0.5 
+*/
