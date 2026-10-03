@@ -12,11 +12,13 @@ int test();
 int main() {
     using namespace std;
     cout << R"(
+            [PROG ./as/as1 IS COMPILED FROM ./report.cpp, THE OUTPUT IS COPIED TO ./as/as1.txt]
+                    ###"as1" is the abbreviation of "Assignment 1"###
  * Author: 陳宥宇
  * Last Updated: Oct.3.2026
  * Purpose: Assignment 1 for MATH208, implementing a Polynomial class with basic operations.
 
---- Assignment 1: Designing a Polynomial Calculator ---
+                    --- Assignment 1: Designing a Polynomial Calculator ---
 
 ## Chapter 0: AI Usage Disclaimer
 In the process of completing this assignment,

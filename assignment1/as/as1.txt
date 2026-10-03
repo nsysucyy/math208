@@ -1,9 +1,11 @@
 
+            [PROG ./as/as1 IS COMPILED FROM ./report.cpp, THE OUTPUT IS COPIED TO ./as/as1.txt]
+                    ###"as1" is the abbreviation of "Assignment 1"###
  * Author: 陳宥宇
  * Last Updated: Oct.3.2026
  * Purpose: Assignment 1 for MATH208, implementing a Polynomial class with basic operations.
 
---- Assignment 1: Designing a Polynomial Calculator ---
+                    --- Assignment 1: Designing a Polynomial Calculator ---
 
 ## Chapter 0: AI Usage Disclaimer
 In the process of completing this assignment,
@@ -82,16 +84,16 @@ Therefore, its time complexity is strictly linear, denoted as O(N), where N is t
 2. The results of the benchmark tests are as follows:
 
 --- Benchmark Results (10000 iterations) --- //as1
-Addition (+) Time      : 0.009104 seconds
-Subtraction (-) Time   : 0.008892 seconds
-Multiplication (*) Time: 7.7519 seconds
-Negation (-p) Time     : 0.006171 seconds
+Addition (+) Time      : 0.00864 seconds
+Subtraction (-) Time   : 0.008759 seconds
+Multiplication (*) Time: 7.7981 seconds
+Negation (-p) Time     : 0.006159 seconds
 
 --- Benchmark Results (10000 iterations) --- //slowas1
-Addition (+) Time      : 0.035576 seconds
-Subtraction (-) Time   : 0.029429 seconds
-Multiplication (*) Time: 12.2455 seconds
-Negation (-p) Time     : 0.028014 seconds
+Addition (+) Time      : 0.037027 seconds
+Subtraction (-) Time   : 0.029627 seconds
+Multiplication (*) Time: 12.4079 seconds
+Negation (-p) Time     : 0.02811 seconds
 
 
 ## Chapter 5: Compile Report.cpp and Text based Output
